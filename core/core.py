@@ -17,6 +17,7 @@ hosts = [
     "Taipei, Taiwan - AS149791 StarVerse Network Ltd.",
     "Taichung, Taiwan - AS17809 VEE TIME CORP.",
     "Taoyuan, Taiwan - AS131596 TBC",
+    "Tainan, Taiwan - AS3462 Data Communication Business Group",
 ]
 
 
@@ -127,5 +128,7 @@ async def handle_ping_command(
         url = "https://api.cowgl.xyz/ping"
     elif host_index == 2:
         url = "https://pingapi.milkteamc.org/ping"
+    elif host_index == 3:
+        url = "http://59.127.149.67:9199/ping"
 
     return await ping_host(ctx, url, api_key, detected_target, ip_version, host)
