@@ -130,11 +130,6 @@ async def handle_ping_command(
             "api_key": "",
             "private": False,
         },
-        "Taoyuan, Taiwan - AS131596 TBC": {
-            "url": "https://pingapi.milkteamc.org/ping",
-            "api_key": "",
-            "private": False,
-        },
     }
 
     if host not in host_info:
