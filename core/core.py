@@ -243,10 +243,10 @@ def get_host_info():
             "private": True,
         },
         "Taichung, Taiwan - AS17809 VEE TIME CORP.": {
-            "ping_url": "https://api.cowgl.xyz/ping",
-            "mtr_url": "https://api.cowgl.xyz/mtr",
-            "api_key": "",
-            "private": False,
+            "ping_url": "http://cowgl.xyz:9199/ping",
+            "mtr_url": "http://cowgl.xyz:9199/mtr",
+            "api_key": os.environ.get("APIKEY0", ""),
+            "private": True,
         },
         "Los Angeles, United States - AS36352 HostPapa.": {
             "ping_url": "http://lax1.maoyue.tw:9199/ping",
